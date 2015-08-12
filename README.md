@@ -1,5 +1,5 @@
-#Christoph Szczechowicz Portfolio Webpage
+###Christoph Szczechowicz Portfolio Webpage
 
 This is a personal website that contains an about me section, my resume, contact information, porfolio, and a contact form.
 
-htttp://cjszczechowicz.com
+[htttp://cjszczechowicz.com](htttp://cjszczechowicz.com)
