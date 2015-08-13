@@ -1,3 +1,56 @@
+<?php
+ 
+  if ($_POST["submit"]) {
+      
+     if (!$_POST['name']) {
+ 
+       $error="<br />Please enter your name";
+ 
+     }
+      
+     if (!$_POST['email']) {
+ 
+       $error.="<br />Please enter your email address";
+ 
+     }
+
+     if (!$_POST['comment']) {
+ 
+       $error.="<br />Please enter a messsage";
+ 
+     }
+      
+    if ($_POST['email']!="" AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      
+      $error.="<br />Please enter a valid email address";
+ 
+     }
+      
+     if ($error) {
+ 
+      $result='<div class="alert alert-danger"><strong>There were error(s) in your form:</strong>'.$error.'</div>';
+ 
+      } else {
+ 
+      if (mail("cjszczechowicz@gmail.com", "Comment from website!", "Name: " .$_POST['name'] ."
+      
+      Phone number: " .$_POST['phone']." 
+      
+      Email: " .$_POST['email']."
+      
+      Comment: ". $_POST['comment'])) {
+ 
+        $result='<div class="alert alert-success"><strong>Thank you. Your form has been submitted!</strong></div>';
+ 
+      } else {
+ 
+      $result='<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again later.</div>';
+ 
+      }
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,23 +78,34 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#1">About</a></li>
-        <li><a href="#2">Portfolio</a></li>
-        <li><a href="#3">Link</a></li>
-        <li><a href="#4">Contact</a></li>
+        <li><a href="#2">About</a></li>
+        <li><a href="#3">Portfolio</a></li>
+        <!-- <li><a href="#4">Channel</a></li> -->
+        <li><a href="#5">Contact</a></li>
          
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
   
-  <!--About Section -->
-  <div id="1" style= "min-height:1000px;background:lightgrey;">
+  <!--Home /Main Section -->
+  <div id="#" style= "min-height:1000px;background:white;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <br/>
-          <br/>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--About Section -->
+  <div id="2" style= "min-height:1000px;background:lightgrey;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br>
+          <br>
           <h2>About</h2>
         </div>
       </div>
@@ -49,38 +113,38 @@
   </div>
 
   <!-- Porfolio Section -->
-  <div id="2" style= "min-height:1000px;background:white;">
+  <div id="3" style= "min-height:1000px;background:white;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <br/>
-          <br/>
+          <br>
+          <br>
           <h2>Porfolio</h2>
         </div>
       </div>
     </div>
   </div>
 
-  <!--Link Section -->
-  <div id="3" style= "min-height:1000px;background:lightgrey;">
+  <!--Channel Section -->
+<!--   <div id="4" style= "min-height:1000px;background:lightgrey;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <br/>
-          <br/>
-          <h2>Link</h2>
+          <br>
+          <br>
+          <h2>Channel</h2>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Contact Section -->
-  <div id="4" style= "min-height:1000px;background:white;">
+  <div id="5" style= "min-height:500px;background:lightgrey;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 centered">
-          <br/>
-          <br/>
+          <br>
+          <br>
           <h2 class="contact-form-title">Contact</h2>
 
             <!--Contact Form -->
@@ -112,6 +176,20 @@
       </div>
     </div>
   </div>
+  
+  <!--Footer -->
+  <div class="container-fluid footer-section">
+    <div class="row">
+      <div class="col-md-4">
+        <h6><strong>Christoph Szczechowicz &copy; 2015 </strong></h6>
+      </div>
+      <div class="col-md-8">
+        <a href="https://twitter.com/christophszcz"><span class="link"><strong>Twitter</strong></span></a>
+        <a href="https://github.com/christophszcz"><span class="link"><strong>GitHub</strong></span></a>
+        <a href="https://ca.linkedin.com/in/christophszczechowicz"><span class="link"><strong>Linkedin</strong></span></a>
+      </div>
+    </div>
+  </div>  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
