@@ -1,0 +1,43 @@
+/*Contact Section */
+
+ 
+.contact {
+    min-height:700px;
+    background-image: url('../img/mountains.jpg');
+    background-size: 2560px 1100px;  
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contact Form */
+
+h2.contact-form-title { 
+  text-align: center; 
+}
+
+.btn.btn-success.btn-md{
+  margin-left: 190px;
+}
+
+.contact-form-title{
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700
+}
+  
+/* Footer */
+
+footer {
+  padding-top: 350px;
+}
+
+.footer-items {
+  padding-left: 133px;
+  font-family: 'Lato', serif;
+}
+
+.copyright{
+  color: #fff
+}
