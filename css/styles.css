@@ -1,5 +1,103 @@
-/*Contact Section */
+/* Main */
 
+/* About */
+
+.about-title{
+  text-align: center; 
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.description {
+  color: #777;
+}
+
+h4{
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #32CD32;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.list-inline {
+  margin-left: 100px;
+}
+
+.fa {
+ padding-left: 10px; 
+}
+
+.btn-black.btn-primary.outline {
+  border: 2px solid #000000;
+  color: #000000;
+  margin-right: 20px;
+  font-size: 13px;
+  font-family: "montserrat";
+}
+
+.btn-black.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+a.button-link, a:visited {
+    color: #696969;
+    text-decoration: none;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #696969;
+    border-color:  #696969;
+}
+
+
+/* Portfolio */
+
+.portfolio-title{
+  text-align: center; 
+  color: #778899;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700
+}
+
+/*Contact Section */
  
 .contact {
     min-height:700px;
