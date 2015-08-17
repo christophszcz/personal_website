@@ -1,7 +1,9 @@
-/* Main */
+/* Main Section */
 
-
- 
+.main-section{
+ min-height:800px; 
+ background:black;
+}
 
 .bg-light-gray {
     background-color: #f7f7f7;
@@ -175,7 +177,12 @@ header .intro-text .intro-heading {
     }
 }
 
-/* About */
+/* About Section*/
+
+.about-section {
+  min-height:800px;
+  background:lightgrey;
+}
 
 .about-title{
   text-align: center; 
@@ -260,8 +267,12 @@ a.button-link, a:visited {
   border-color:  #696969;
 }
 
-/* Portfolio */
+/* Portfolio Section*/
 
+.portfolio-section {
+  min-height:900px;
+  background:white;
+} 
 .portfolio-title{
   text-align: center; 
   color: #778899;
@@ -273,7 +284,7 @@ a.button-link, a:visited {
 
 /*Contact Section */
  
-.contact {
+.contact-section {
     min-height:700px;
     background-image: url('../img/mountains.jpg');
     background-size: 2560px 1100px;  
