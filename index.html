@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -44,10 +45,14 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="main-text">Hi there, my name is Christoph...</div>
-                <div class="main-text">and I <3 programming</div>
-                <span id="caption"></span><span  class="main-text" id="cursor">|</span>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="main-text"> 
+                  $ Hi there, my name is Christoph...<br>
+                  $ and I <3 programming 
+                  <span id="caption"></span>
+                  <span  class="main-text" id="cursor">|</span>
+                </div>
+                <br>
+                <a href="#2" class="page-scroll btn btn-xl">Find Out More</a>
             </div>
         </div>
     </header>
@@ -85,13 +90,13 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am a currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
+                      <p class="large description"> I am a currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Bootstrap, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
                   </div>
               </div>
 
               <div class = "container-fluid" style= "padding-top: 12px;padding-left: 485px;">
                 <div class="btn-group" role="group" aria-label="...">
-                  <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/Christoph'sGraphicResume.pdf">DOWNLOAD CV</a>
+                  <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/Christoph'sGraphicResume.pdf">DOWNLOAD RESUME</a>
                 </div> 
               </div> 
       </div>
@@ -106,6 +111,7 @@
           <br>
           <br>
           <h2 class="portfolio-title">Portfolio</h2>
+          <h3>Here are a few of my projects and contributions:</h3>
         </div>
       </div>
     </div>
@@ -187,84 +193,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $('.nav li a').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) {
-          var $target = $(this.hash);
-          $target = $target.length && $target
-          || $('[name=' + this.hash.slice(1) +']');
-          if ($target.length) {
-            var targetOffset = $target.offset().top;
-            $('html,body')
-            .animate({scrollTop: targetOffset}, 1000);
-           return false;
-          }
-        }
-      });
-    }); 
-
-    var captionLength = 0;
-    var caption = '';
-
-
-  $(document).ready(function() {
-      setInterval ('cursorAnimation()', 600);
-      captionEl = $('#caption');
-      
-      $('#test-typing').click(function(){
-          testTypingEffect();
-      });
-
-      $('#test-erasing').click(function(){
-          testErasingEffect();
-      });
-  });
-
-  function testTypingEffect() {
-      caption = $('input#user-caption').val();
-      type();
-  }
-
-  function type() {
-      captionEl.html(caption.substr(0, captionLength++));
-      if(captionLength < caption.length+1) {
-          setTimeout('type()', 50);
-      } else {
-          captionLength = 0;
-          caption = '';
-      }
-  }
-
-  function testErasingEffect() {
-      caption = captionEl.html();
-      captionLength = caption.length;
-      if (captionLength>0) {
-          erase();
-      } else {
-          $('#caption').html("You didn't write anything to erase, but that's ok!");
-          setTimeout('testErasingEffect()', 1000);
-      }
-  }
-
-  function erase() {
-      captionEl.html(caption.substr(0, captionLength--));
-      if(captionLength >= 0) {
-          setTimeout('erase()', 50);
-      } else {
-          captionLength = 0;
-          caption = '';
-      } 
-  }
-
-  function cursorAnimation() {
-      $('#cursor').animate({
-          opacity: 0
-      }, 'fast', 'swing').animate({
-          opacity: 1
-      }, 'fast', 'swing');
-  }   
-    </script>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>

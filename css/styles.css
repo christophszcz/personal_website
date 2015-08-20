@@ -1,12 +1,19 @@
+/*Navbar */
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+}
+
 /* Main Section */
 
 .main-section{
- min-height:800px; 
- background:black;
+  min-height:800px; 
+  background:black;
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .bg-darkest-gray {
@@ -116,6 +123,8 @@ fieldset[disabled] .btn-xl.active {
 
 .main-text{
   color:#00FF00;
+  font-family: Monospace;
+  font-size: 34px
 }
 
 header {
