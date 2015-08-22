@@ -291,10 +291,19 @@ a.button-link, a:visited {
   font-weight: 700
 }
 
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0.75;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
 /*Contact Section */
  
 .contact-section {
-    min-height:700px;
+    min-height:500px;
     background-image: url('../img/mountains.jpg');
     background-size: 2560px 1100px;  
     background-position: center;
