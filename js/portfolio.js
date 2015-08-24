@@ -77,26 +77,7 @@ function cursorAnimation() {
   }, 'fast', 'swing');
 } 
 
-// function fadein(){
-//             $('#p-item1').click(function() { bootbox.alert('<img src="./img/portfolio/SundayNightEntertainment.png" height="388px" width="800px"><h4>Dog ipsum dolor sit amet</h4>'); });
-//             $('#p-item2').click(function() { bootbox.alert('<img src="./img/portfolio/Task_Hackr.png" height="388px" width="800px"><h4>Cat ipsum dolor sit amet</h4>'); });
-//             $('#p-item3').click(function() { bootbox.alert('<img src="./img/portfolio/UofTAnatomyDatabook.png" height="388px" width="800px"><h4>Bird ipsum dolor sit amet</h4>'); });
-//             $('#p-item4').click(function() { bootbox.alert('<img src="./img/portfolio/WillemandJools.png" height="388px" width="800px"><h4>Dog ipsum dolor sit amet</h4>'); });
-//             $('#p-item5').click(function() { bootbox.alert('<img src="./img/portfolio/ChefBen.png" height="388px" width="800px"><h4>Cat ipsum dolor sit amet</h4>'); });
-//         }
-//     var $itemsHolder = $('.col-md-4.span3');
-//     var $itemsClone = $itemsHolder.clone(); 
-//     var $filterClass = "";
-//     $('ul.filter li').click(function(e) {
-//     e.preventDefault();
-//     $filterClass = $(this).attr('data-value');
-//         if($filterClass == 'all'){ var $filters = $itemsClone.find('.span3'); }
-//         else { var $filters = $itemsClone.find('li[data-type='+ $filterClass +']'); }
-//         $itemsHolder.quicksand(
-//           $filters,
-//           { fadein: 1000 },
-//           gallery
-//           );
-//     });
-//     $(document).ready(fadein); 
+ 
+ 
+
  

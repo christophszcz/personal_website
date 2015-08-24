@@ -296,9 +296,25 @@ a.button-link, a:visited {
   opacity: 0.75;
 }
 
+/* Modals */
+
 .modal-footer {
   text-align: center;
 }
+
+.modal{
+  text-align: center;
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0.75;
+}
+
+.img-responsive#image {
+  display: inline;
+}
+
 
 /*Contact Section */
  
