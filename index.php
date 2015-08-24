@@ -163,7 +163,7 @@
           <br>
           <br>
           <h2 class="portfolio-title">Portfolio</h2>
-          <h3>Here are a few of my projects and contributions:</h3>
+          <h3>Here are a few of my projects and contributions (click on each thumbnail for more information):</h3>
         </div>
       </div>
       <br>
