@@ -1,3 +1,56 @@
+<?php
+ 
+  if ($_POST["submit"]) {
+      
+     if (!$_POST['name']) {
+ 
+       $error="<br />Please enter your name";
+ 
+     }
+      
+     if (!$_POST['email']) {
+ 
+       $error.="<br />Please enter your email address";
+ 
+     }
+
+     if (!$_POST['comment']) {
+ 
+       $error.="<br />Please enter a messsage";
+ 
+     }
+      
+    if ($_POST['email']!="" AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      
+      $error.="<br />Please enter a valid email address";
+ 
+     }
+      
+     if ($error) {
+ 
+      $result='<div class="alert alert-danger"><strong>There were error(s) in your form:</strong>'.$error.'</div>';
+ 
+      } else {
+ 
+      if (mail("cjszczechowicz@gmail.com", "Comment from website!", "Name: " .$_POST['name'] ."
+      
+      Phone number: " .$_POST['phone']." 
+      
+      Email: " .$_POST['email']."
+      
+      Comment: ". $_POST['comment'])) {
+ 
+        $result='<div class="alert alert-success"><strong>Thank you. Your form has been submitted!</strong></div>';
+ 
+      } else {
+ 
+      $result='<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again later.</div>';
+ 
+      }
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -72,7 +125,7 @@
                   <div class="col-sm-4">
                       <div class="team-member">
                           <img src="img/personalPhoto.jpg" class="img-responsive img-circle" alt="">
-                          <h4 class="col-lg-12 text-center">Christoph Szczechowicz</h4>
+                          <h4 class="col-lg-12 text-center">Chris Szczechowicz</h4>
                           <p class="text-muted col-lg-12 text-center">Full Stack Web Developer</p>
                           <ul class="list-inline social-buttons">
                               <li><a href="https://twitter.com/christophszcz"><i class="fa fa-twitter"></i></a>
@@ -89,13 +142,13 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am a currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Bootstrap, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
+                      <p class="large description"> I am a currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Foundation, Bootstrap, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
                   </div>
               </div>
 
-              <div class = "container-fluid" style= "padding-top: 12px;padding-left: 485px;">
+              <div class = "container-fluid" id="download-button">
                 <div class="btn-group" role="group" aria-label="...">
-                  <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/Christoph'sGraphicResume.pdf">DOWNLOAD RESUME</a>
+                  <a type="button"class="button-link btn-black btn-primary btn-lg outline btn-responsive" href ="pdf/Christoph'sGraphicResume.pdf">DOWNLOAD RESUME</a>
                 </div> 
               </div> 
       </div>
@@ -187,7 +240,6 @@
   </div> -->
 
   <!-- Contact Section -->
-  <?php include 'contact.php';?>
   <div id="5" class="contact-section">
     <div class="container">
       <div class="row">
@@ -235,12 +287,12 @@
     <div class="row">
       <div class="col-md-4">
         <h6 class="copyright">
-          <strong> Copyright &copy; Christoph Szczechowicz 2015 </strong>
+          <strong> Copyright &copy; Chris Szczechowicz 2015 </strong>
         </h6>
       </div>
       <div class="col-md-8 footer-items">
         <a href="mailto:cjszczechowicz@gmail.com"><span class="link"><strong><img src ="img/icons/emailLogoFooter.png" height="50" width="50"></strong></span></a>
-        <a href="https://twitter.com/christophszcz"><span class="link"><img src="img/icons/TwitterLogoFooter.png" height="50" width="50"></span></a>
+        <a href="https://twitter.com/christophszcz"><span class="link"><img src="img/icons/twitterLogoFooter.png" height="50" width="50"></span></a>
         <a href="https://github.com/christophszcz"><span class="link"><img src ="img/icons/GitHubIconFooter.png" height="50" width="50"></span></a>
         <a href="https://ca.linkedin.com/in/christophszczechowicz"><span class="link"><strong><img src ="img/icons/linkedinLogoFooter.png" height="50" width="50"></strong></span></a>
       </div>
@@ -348,23 +400,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/portfolio.js"></script>
-    <script src="js/bootbox.min.js"></script>
-    <script src="js/jquery.quicksand.js"></script>
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
+    
   </body>
 </html>
