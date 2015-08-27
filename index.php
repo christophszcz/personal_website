@@ -50,7 +50,6 @@
     }
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -72,7 +71,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed navbar-ex1-collapse  " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -83,10 +82,16 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#2">About</a></li>
-        <li><a href="#3">Portfolio</a><li>
-        <!-- <li><a href="#4">Channel --></li>
-        <li><a href="#5">Contact</a></li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        <li>
+        <!-- <li><a href="#4">Channel </li>-->
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -104,14 +109,14 @@
                   <span  class="main-text" id="cursor">|</span>
                 </div>
                 <br>
-                <a href="#2" class="page-scroll btn btn-xl">Find Out More</a>
+                <a href="#about" class="page-scroll btn btn-xl">Find Out More</a>
             </div>
         </div>
     </header>
   </div>
 
   <!--About Section -->
-  <div id="2" class="about-section">
+  <div id="about" class="about-section">
     <div class="container">
           <div class="row">
                   <br>
@@ -142,7 +147,7 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am a currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Foundation, Bootstrap, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
+                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, SQL and PostgreSQL databases and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
                   </div>
               </div>
 
@@ -156,7 +161,7 @@
   </div>
 
   <!-- Porfolio Section -->
-  <div id="3" class="portfolio-section">
+  <div id="portfolio" class="portfolio-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -240,7 +245,7 @@
   </div> -->
 
   <!-- Contact Section -->
-  <div id="5" class="contact-section">
+  <div id="contact" class="contact-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 centered">
@@ -399,7 +404,8 @@
            
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/scrolling.js"></script>
     
   </body>
 </html>
