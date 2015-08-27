@@ -50,7 +50,6 @@
     }
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -142,7 +141,7 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am currently a freelance developer proficient in  Ruby on Rails, JavaScript, jQuery, HTML5, CSS3, Foundation, Bootstrap, WordPress, Git and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL. </p>
+                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, SQL and PostgreSQL databases and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL.</p>
                   </div>
               </div>
 

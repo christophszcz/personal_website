@@ -305,6 +305,13 @@ a.button-link, a:visited {
 
 .modal{
   text-align: center;
+     position: fixed;
+    left: 25%;
+    top: 10%;
+}
+
+.modal-content {
+  max-width: 700px;
 }
 
 .modal-backdrop.in {
@@ -386,6 +393,10 @@ footer {
   .col-md-8.footer-items{
   padding-left: 350px;
   }
+  .modal{
+    left: 0%;
+    top: 0%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -419,16 +430,14 @@ footer {
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 684px) {
   .list-inline.social-buttons {
-    margin-left: 234px; 
+    margin-left: 250px; 
   }
   .container-fluid#download-button {
-    padding-left: 220px;
+    padding-left: 230px;
   }
 }
-
-
 
 @media (max-width: 655px) {
   .list-inline.social-buttons {
@@ -499,6 +508,15 @@ footer {
   }
   .list-inline.social-buttons {
     margin-left: 150px; 
+  }
+}
+
+@media (max-width: 445px) {
+  .container-fluid#download-button {
+    padding-left: 109px;
+  }
+  .list-inline.social-buttons {
+    margin-left: 128px; 
   }
 }
 
