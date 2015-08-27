@@ -398,6 +398,10 @@ footer {
   .col-md-8.footer-items{
   padding-left: 300px;
   }
+  header .intro-text {
+  padding-top: 235px;
+  }
+  
 }
 
 @media (max-width: 730px) {
@@ -405,6 +409,26 @@ footer {
     margin-left: 271px; 
   }
 }
+
+@media (max-width: 710px) {
+  .list-inline.social-buttons {
+    margin-left: 266px; 
+  }
+  .container-fluid#download-button {
+    padding-left: 247px;
+  }
+}
+
+@media (max-width: 655px) {
+  .list-inline.social-buttons {
+    margin-left: 234px; 
+  }
+  .container-fluid#download-button {
+    padding-left: 220px;
+  }
+}
+
+
 
 @media (max-width: 655px) {
   .list-inline.social-buttons {
@@ -442,12 +466,39 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .container-fluid#download-button {
-    padding-left: 92px;
+    padding-left: 150px;
   }
   .list-inline.social-buttons {
-    margin-left: 165px; 
+    margin-left: 175px; 
+  }
+}
+
+@media (max-width: 520px) {
+  .container-fluid#download-button {
+    padding-left: 150px;
+  }
+  .list-inline.social-buttons {
+    margin-left: 168px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .container-fluid#download-button {
+    padding-left: 135px;
+  }
+  .list-inline.social-buttons {
+    margin-left: 158px; 
+  }
+}
+
+@media (max-width: 485px) {
+  .container-fluid#download-button {
+    padding-left: 135px;
+  }
+  .list-inline.social-buttons {
+    margin-left: 150px; 
   }
 }
 
@@ -457,6 +508,9 @@ footer {
   }
   .col-md-8.footer-items{
     padding-left: 100px;
+  }
+  .container-fluid#download-button {
+    padding-left: 102px;
   }
   .list-inline.social-buttons {
     margin-left: 117px; 
@@ -472,5 +526,20 @@ footer {
   }
   input.btn.btn-success.btn-lg {
     margin-left: 75px;
+  }
+  .navbar-brand {
+  font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-fluid#download-button {
+    padding-left: 70px;
+  }
+  .list-inline.social-buttons {
+    margin-left: 87px; 
+  }
+  input.btn.btn-success.btn-lg {
+    margin-left: 53px;
   }
 }
