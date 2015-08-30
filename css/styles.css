@@ -162,7 +162,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-@media(min-width:768px) {
+    @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
@@ -246,7 +246,7 @@ ul.social-buttons li a:active {
 }
 
 .list-inline {
-  margin-left: 100px;
+  margin-left: 105px;
 }
 
 .fa {
@@ -278,7 +278,7 @@ a.button-link, a:visited {
 
 .container-fluid#download-button {
     padding-top: 12px;
-    padding-left: 485px;
+    padding-left: 480px;
 }
 
 /* Portfolio Section*/
@@ -295,6 +295,113 @@ a.button-link, a:visited {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.img-hover {
+  position: relative;
+  vertical-align: top;
+}
+
+.img-hover__image { display: block; }
+
+.img-hover__body {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.img-hover__body:hover { opacity: 1; }
+
+.img-hover__body:after,
+.img-hover__body:before {
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.img-hover__body.border:after,
+.img-hover__body.border:before {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.img-hover__body:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+.img-hover__body:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.img-hover__body:hover:after,
+.img-hover__body:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.img-hover__body h2 { margin-top: 0; }
+
+.img-hover__body p { margin-bottom: 1.5em; }
+
+.img-hover:nth-child(2) .img-hover__body { background: rgba(146, 41, 185, 0.7); }
+
+.img-hover:nth-child(3) .img-hover__body { background: rgba(185, 41, 128, 0.7); }
+
+.img-hover:nth-child(4) .img-hover__body { background: rgba(185, 50, 41, 0.7); }
+
+.img-hover:nth-child(5) .img-hover__body { background: rgba(185, 146, 41, 0.7); }
+
+.img-hover:nth-child(6) .img-hover__body { background: rgba(128, 185, 41, 0.7); }
+
+.glyphicon {
+  top: 80px;
 }
 
 /* Modals */
@@ -397,13 +504,19 @@ footer {
     left: 0%;
     top: 0%;
   }
+  .glyphicon {
+    top: 168px;
+  }
+  .img-hover__body {
+    font-size: 3em;
+  }
 }
 
 @media (max-width: 768px) {
   .about-section {
     min-height:900px;
   }
-   .list-inline.social-buttons {
+  .list-inline.social-buttons {
     margin-left: 287px; 
   }
   .col-md-8.footer-items{
@@ -428,6 +541,12 @@ footer {
   .container-fluid#download-button {
     padding-left: 247px;
   }
+  .glyphicon {
+    top: 150px;
+  }
+  .img-hover__body {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 684px) {
@@ -436,6 +555,12 @@ footer {
   }
   .container-fluid#download-button {
     padding-left: 230px;
+  }
+  .glyphicon {
+    top: 144px;
+  }
+  .img-hover__body {
+    font-size: 2em;
   }
 }
 
@@ -473,6 +598,12 @@ footer {
   .list-inline.social-buttons {
     margin-left: 195px; 
   }
+  .glyphicon {
+    top: 129px;
+  }
+  .img-hover__body {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 540px) {
@@ -509,6 +640,9 @@ footer {
   .list-inline.social-buttons {
     margin-left: 150px; 
   }
+  .glyphicon {
+    top: 100px;
+  }
 }
 
 @media (max-width: 445px) {
@@ -517,6 +651,9 @@ footer {
   }
   .list-inline.social-buttons {
     margin-left: 128px; 
+  }
+  .glyphicon {
+    top: 80px;
   }
 }
 

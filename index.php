@@ -50,6 +50,7 @@
     }
   }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -141,7 +142,7 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, SQL and PostgreSQL databases and using AJAX. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL.</p>
+                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, using AJAX, SQL and PostgreSQL databases. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL.</p>
                   </div>
               </div>
 
@@ -162,24 +163,36 @@
           <br>
           <br>
           <h2 class="portfolio-title">Portfolio</h2>
-          <h3>Here are a few of my projects and contributions (click on each thumbnail for more information):</h3>
+          <h3>Here are a few of my projects and contributions:</h3>
         </div>
       </div>
       <br>
 
         <div class="row">
           <div class="col-md-4">
-              <a href="#firstModal" data-toggle="modal"><img class="thumbnail img-responsive" src="img/portfolio/SundayNightEntertainment.png" alt=""></a>
-
-              <div class="portfolio-caption">
-                <h4>Sunday Night Entertainment</h4>
-                <p class="text-muted">Entertainment Portfolio Website</p>
+            <a href="#firstModal" data-toggle="modal">
+              <div class="img-hover">
+                <img class="thumbnail img-responsive" src="img/portfolio/SundayNightEntertainment.png" alt="">
+                  <div class="img-hover__body contenthover">
+                    <i class="glyphicon glyphicon-plus"></i> 
+                  </div>
               </div>
+            </a>  
+            <div class="portfolio-caption">
+              <h4>Sunday Night Entertainment</h4>
+              <p class="text-muted">Entertainment Portfolio Website</p>
+            </div>
           </div>
 
           <div class="col-md-4">
-            <a href="#secondModal" data-toggle="modal"><img class="thumbnail img-responsive" src="img/portfolio/Task_Hackr.png" alt=""></a>
-
+            <a href="#secondModal" data-toggle="modal">
+              <div class="img-hover">
+                <img class="thumbnail img-responsive" src="img/portfolio/Task_Hackr.png" alt=""> 
+                  <div class="img-hover__body contenthover">
+                    <i class="glyphicon glyphicon-plus"></i> 
+                  </div>
+              </div>
+            </a>
             <div class="portfolio-caption">
               <h4>Task Hackr</h4>
               <p class="text-muted">Ruby on Rails Web Application</p>
@@ -187,8 +200,14 @@
           </div>
 
           <div class="col-md-4">
-            <a href="#thirdModal" data-toggle="modal" data-target="#thirdModal"><img class="thumbnail img-responsive" src="img/portfolio/UofTAnatomyDatabook.png" alt=""></a>
-
+            <a href="#thirdModal" data-toggle="modal" data-target="#thirdModal">
+              <div class="img-hover">
+                <img class="thumbnail img-responsive" src="img/portfolio/UofTAnatomyDatabook.png" alt=""> 
+                  <div class="img-hover__body contenthover">
+                    <i class="glyphicon glyphicon-plus"></i> 
+                  </div>
+              </div>
+            </a>
             <div class="portfolio-caption">
               <h4>U of T Anatomy Databook</h4>
               <p class="text-muted">Ruby on Rails Web Application</p>
@@ -202,20 +221,33 @@
       <div class="col-md-2"></div>
 
       <div class="col-md-4">
-          <a href="#fourthModal" data-toggle="modal" data-target="#fourthModal"><img class="thumbnail img-responsive"src="img/portfolio/WillemandJools.png" alt=""></a>
-
-          <div class="portfolio-caption">
-            <h4>Willem & Jools |  European Bucket Flowers</h4>
-            <p class="text-muted">Business Website</p>
+        <a href="#fourthModal" data-toggle="modal" data-target="#fourthModal">
+          <div class="img-hover">
+            <img class="thumbnail img-responsive"src="img/portfolio/WillemandJools.png" alt="">
+              <div class="img-hover__body contenthover">
+                <i class="glyphicon glyphicon-plus"></i>
+              </div>
           </div>
+        </a>
+        <div class="portfolio-caption">
+          <h4>Willem & Jools |  European Bucket Flowers</h4>
+          <p class="text-muted">Business Website</p>
+        </div>
       </div>
 
       <div class="col-md-4">
-          <a href="#fifthModal" data-toggle="modal" data-target="#fifthModal"><img class="thumbnail img-responsive" src="img/portfolio/ChefBen.png" alt=""></a> 
-          <div class="portfolio-caption">
-            <h4>Chef Ben Catering</h4>
-            <p class="text-muted">Business Website</p>
+        <a href="#fifthModal" data-toggle="modal" data-target="#fifthModal">
+          <div class="img-hover">
+            <img class="thumbnail img-responsive" src="img/portfolio/ChefBen.png" alt="">
+              <div class="img-hover__body contenthover">
+                <i class="glyphicon glyphicon-plus"></i>
+              </div>
           </div>
+        </a> 
+        <div class="portfolio-caption">
+          <h4>Chef Ben Catering</h4>
+          <p class="text-muted">Business Website</p>
+        </div>
       </div>
 
         <div class="col-md-2"></div>
