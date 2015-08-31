@@ -186,6 +186,62 @@ header .intro-text .intro-heading {
     }
 }
 
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 35px;
+  font-color: #00FF00;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
 /* About Section*/
 
 .about-section {
@@ -314,7 +370,7 @@ a.button-link, a:visited {
 .img-hover__image { display: block; }
 
 .img-hover__body {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(46, 255, 0, 0.75);
   bottom: 0;
   color: white;
   font-size: 1em;

@@ -59,20 +59,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chris Szczechowicz Porfoilio Page</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
   
   <!--Navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -83,17 +83,23 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a><li>
-        <!-- <li><a href="#4">Channel --></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="page-scroll">
+          <a href="#about">About</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#portfolio">Portfolio</a>
+        <li>
+        <!-- <li><a href="#4">Channel </li> -->
+        <li class="page-scroll">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
   
   <!--Home /Main Section -->
-  <div id="1" class="main-section">
+  <section class="main-section">
     <header>
         <div class="container">
             <div class="intro-text">
@@ -101,17 +107,17 @@
                   $ Hi there, my name is Chris...<br>
                   $ and I <3 programming 
                   <span id="caption"></span>
-                  <span  class="main-text" id="cursor">|</span>
+                  <span  class="main-text blinking-cursor">|</span>
                 </div>
                 <br>
                 <a href="#about" class="page-scroll btn btn-xl">Find Out More</a>
             </div>
         </div>
     </header>
-  </div>
+  </section>
 
   <!--About Section -->
-  <div id="about" class="about-section">
+  <section id="about" class="about-section">
     <div class="container">
           <div class="row">
                   <br>
@@ -153,10 +159,10 @@
               </div> 
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Porfolio Section -->
-  <div id="portfolio" class="portfolio-section">
+  <section id="portfolio" class="portfolio-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -254,7 +260,7 @@
         
       </div>
     </div>
-  </div>
+  </section>
 
 
   <!--Channel Section -->
@@ -271,7 +277,7 @@
   </div> -->
 
   <!-- Contact Section -->
-  <div id="contact" class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 centered">
@@ -313,23 +319,24 @@
   </div>
   
   <!--Footer -->
-  <footer>
-    <div class="container-fluid footer-section">
-    <div class="row">
-      <div class="col-md-4">
-        <h6 class="copyright">
-          <strong> Copyright &copy; Chris Szczechowicz 2015 </strong>
-        </h6>
+    <footer>
+      <div class="container-fluid footer-section">
+      <div class="row">
+        <div class="col-md-4">
+          <h6 class="copyright">
+            <strong> Copyright &copy; Chris Szczechowicz 2015 </strong>
+          </h6>
+        </div>
+        <div class="col-md-8 footer-items">
+          <a href="mailto:cjszczechowicz@gmail.com"><span class="link"><strong><img src ="img/icons/emailLogoFooter.png" height="50" width="50"></strong></span></a>
+          <a href="https://twitter.com/christophszcz"><span class="link"><img src="img/icons/twitterLogoFooter.png" height="50" width="50"></span></a>
+          <a href="https://github.com/christophszcz"><span class="link"><img src ="img/icons/GitHubIconFooter.png" height="50" width="50"></span></a>
+          <a href="https://ca.linkedin.com/in/christophszczechowicz"><span class="link"><strong><img src ="img/icons/linkedinLogoFooter.png" height="50" width="50"></strong></span></a>
+        </div>
       </div>
-      <div class="col-md-8 footer-items">
-        <a href="mailto:cjszczechowicz@gmail.com"><span class="link"><strong><img src ="img/icons/emailLogoFooter.png" height="50" width="50"></strong></span></a>
-        <a href="https://twitter.com/christophszcz"><span class="link"><img src="img/icons/twitterLogoFooter.png" height="50" width="50"></span></a>
-        <a href="https://github.com/christophszcz"><span class="link"><img src ="img/icons/GitHubIconFooter.png" height="50" width="50"></span></a>
-        <a href="https://ca.linkedin.com/in/christophszczechowicz"><span class="link"><strong><img src ="img/icons/linkedinLogoFooter.png" height="50" width="50"></strong></span></a>
-      </div>
-    </div>
-  </div>  
-  </footer>
+      </div>  
+    </footer>
+  </section>
 
   <!--Modals -->
 
@@ -427,10 +434,10 @@
       </div>
     </div>
   </div>
-           
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/portfolio.js"></script>
-    
   </body>
 </html>

@@ -1,74 +1,20 @@
-$(document).ready(function(){
-  $('.nav li a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-  setInterval ('cursorAnimation()', 600);
-  captionEl = $('#caption');
-  
-  $('#test-typing').click(function(){
-      testTypingEffect();
-  });
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('body').on('click', '.page-scroll a', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
-  $('#test-erasing').click(function(){
-      testErasingEffect();
-  });
-}); 
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
 
-var captionLength = 0;
-var caption = '';
-
-
-function testTypingEffect() {
-  caption = $('input#user-caption').val();
-  type();
-}
-
-function type() {
-  captionEl.html(caption.substr(0, captionLength++));
-  if(captionLength < caption.length+1) {
-      setTimeout('type()', 50);
-  } else {
-      captionLength = 0;
-      caption = '';
-  }
-}
-
-function testErasingEffect() {
-  caption = captionEl.html();
-  captionLength = caption.length;
-  if (captionLength>0) {
-      erase();
-  } else {
-      $('#caption').html("You didn't write anything to erase, but that's ok!");
-      setTimeout('testErasingEffect()', 1000);
-  }
-}
-
-function erase() {
-  captionEl.html(caption.substr(0, captionLength--));
-  if(captionLength >= 0) {
-      setTimeout('erase()', 50);
-  } else {
-      captionLength = 0;
-      caption = '';
-  } 
-}
-
-function cursorAnimation() {
-  $('#cursor').animate({
-      opacity: 0
-  }, 'fast', 'swing').animate({
-      opacity: 1
-  }, 'fast', 'swing');
-} 
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
