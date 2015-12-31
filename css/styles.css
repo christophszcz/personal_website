@@ -306,7 +306,8 @@ ul.social-buttons li a:active {
 }
 
 .fa {
- padding-left: 10px; 
+  padding-left: 10px; 
+  padding-top: 10px;
 }
 
 .btn-black.btn-primary.outline {
@@ -343,6 +344,10 @@ a.button-link, a:visited {
   min-height:900px;
   background:white;
 } 
+
+.portfolio-caption {
+  text-align: center;
+}
 
 .portfolio-title{
   text-align: center; 

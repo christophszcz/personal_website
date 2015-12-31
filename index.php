@@ -148,7 +148,7 @@
 
               <div class="row">
                   <div class="col-lg-8 col-lg-offset-2 text-center">
-                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, using AJAX, SQL and PostgreSQL databases. I also have limited experience working with Adobe Photoshop, InDesign and writing code using PHP and MySQL.</p>
+                      <p class="large description"> I am currently a freelance developer proficient in  HTML5, CSS3, Ruby on Rails, JavaScript, jQuery, Foundation, Bootstrap, WordPress, Git, using AJAX, JSON, SQL and PostgreSQL databases. I also have limited experience working with Adobe Photoshop, InDesign, MySQL and writing code using PHP and Haml.</p>
                   </div>
               </div>
 
@@ -176,7 +176,7 @@
 
         <div class="row">
           <div class="col-md-4">
-            <a href="#firstModal" data-toggle="modal">
+            <a href="#SundayNight" data-toggle="modal">
               <div class="img-hover">
                 <img class="thumbnail img-responsive" src="img/portfolio/SundayNightEntertainment.png" alt="">
                   <div class="img-hover__body contenthover">
@@ -191,7 +191,7 @@
           </div>
 
           <div class="col-md-4">
-            <a href="#secondModal" data-toggle="modal">
+            <a href="#TaskHackr" data-toggle="modal">
               <div class="img-hover">
                 <img class="thumbnail img-responsive" src="img/portfolio/Task_Hackr.png" alt=""> 
                   <div class="img-hover__body contenthover">
@@ -206,16 +206,16 @@
           </div>
 
           <div class="col-md-4">
-            <a href="#thirdModal" data-toggle="modal" data-target="#thirdModal">
+            <a href="#UofTProject" data-toggle="modal" data-target="#UofTProject">
               <div class="img-hover">
-                <img class="thumbnail img-responsive" src="img/portfolio/UofTAnatomyDatabook.png" alt=""> 
+                <img class="thumbnail img-responsive" src="img/portfolio/UofTDatabaseProject.png" alt=""> 
                   <div class="img-hover__body contenthover">
                     <i class="glyphicon glyphicon-plus"></i> 
                   </div>
               </div>
             </a>
             <div class="portfolio-caption">
-              <h4>U of T Anatomy Databook</h4>
+              <h4>U of T Database Project</h4>
               <p class="text-muted">Ruby on Rails Web Application</p>
             </div>
           </div> 
@@ -227,7 +227,7 @@
       <div class="col-md-2"></div>
 
       <div class="col-md-4">
-        <a href="#fourthModal" data-toggle="modal" data-target="#fourthModal">
+        <a href="#WillemAndJools" data-toggle="modal" data-target="#WillemAndJools">
           <div class="img-hover">
             <img class="thumbnail img-responsive"src="img/portfolio/WillemandJools.png" alt="">
               <div class="img-hover__body contenthover">
@@ -242,16 +242,16 @@
       </div>
 
       <div class="col-md-4">
-        <a href="#fifthModal" data-toggle="modal" data-target="#fifthModal">
+        <a href="#ParsonsLaw" data-toggle="modal" data-target="#ParsonsLaw">
           <div class="img-hover">
-            <img class="thumbnail img-responsive" src="img/portfolio/ChefBen.png" alt="">
+            <img class="thumbnail img-responsive" src="img/portfolio/ParsonsLaw.png" alt="">
               <div class="img-hover__body contenthover">
                 <i class="glyphicon glyphicon-plus"></i>
               </div>
           </div>
         </a> 
         <div class="portfolio-caption">
-          <h4>Chef Ben Catering</h4>
+          <h4>Parsons Law</h4>
           <p class="text-muted">Business Website</p>
         </div>
       </div>
@@ -324,7 +324,7 @@
       <div class="row">
         <div class="col-md-4">
           <h6 class="copyright">
-            <strong> Copyright &copy; Chris Szczechowicz 2015 </strong>
+            <strong> Copyright &copy; Chris Szczechowicz 2016 </strong>
           </h6>
         </div>
         <div class="col-md-8 footer-items">
@@ -340,7 +340,7 @@
 
   <!--Modals -->
 
-  <div class="modal" id="firstModal">
+  <div class="modal" id="SundayNight">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal">X</button>
@@ -361,7 +361,7 @@
     </div>
   </div>
 
-  <div class="modal" id="secondModal">
+  <div class="modal" id="TaskHackr">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal">X</button>
@@ -380,26 +380,26 @@
     </div>
   </div>
 
-  <div class="modal" id="thirdModal">
+  <div class="modal" id="UofTProject">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal">X</button>
-        <h4 class="modal-title">U of T Anatomy Databook</h4>
+        <h4 class="modal-title">U of T Database Project</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" id="image" src="./img/portfolio/UofTAnatomyDatabook.png" height="276px" width="570px">
+        <img class="img-responsive" id="image" src="./img/portfolio/UofTDatabaseProject.png" height="276px" width="570px">
         <br>
         <br>
         <b>Environment:</b>
-        <p>HTML, CSS, JavaScript, jQuery, Ruby on Rails & Bootstrap</p>
+        <p>HTML, CSS, JavaScript, jQuery, JSON, Haml, Ruby on Rails & Bootstrap</p>
         <div class="modal-footer">
-          <a href="https://github.com/christophszcz/anatom_d" class="btn btn-success" role="button">Source Code</a>
+          <b>Source Code Available Upon Request</b>
         </div>
       </div>
     </div> 
   </div>
 
-  <div class="modal" id="fourthModal">
+  <div class="modal" id="WillemAndJools">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal">X</button>
@@ -417,20 +417,20 @@
     </div>
   </div>
 
-  <div class="modal" id="fifthModal">
+  <div class="modal" id="ParsonsLaw">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" data-dismiss="modal">X</button>
-        <h4 class="modal-title">Chef Ben Catering</h4>
+        <h4 class="modal-title">Parsons Law</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive" id="image" src="./img/portfolio/ChefBen.png" height="276px" width="570px">
+        <img class="img-responsive" id="image" src="./img/portfolio/ParsonsLaw.png" height="276px" width="570px">
         <br>
         <br>
         <b>Environment:</b>
         <p>WordPress</p>
         <b>URL:</b><br>
-        <a href="http://chefben.ca/">http://chefben.ca/</a>
+        <a href="http://www.parsonslaw.ca/">http://parsonslaw.ca/</a>
       </div>
     </div>
   </div>
