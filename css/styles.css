@@ -504,7 +504,7 @@ a.button-link, a:visited {
 /* Contact Form */
 
 .btn.btn-success.btn-lg{
-  margin-left: 190px;
+  margin-left: 220px;
 }
 
 .contact-form-title{
@@ -520,7 +520,20 @@ a.button-link, a:visited {
   height: 75px;
   font-size: 24px;
 }
-  
+
+
+.submission-field { 
+  width: 350px; 
+  height: 76px; 
+  border: 1px solid #999999; 
+  padding: 5px; 
+  font-size: 30px
+}
+
+.message-field {
+  font-size: 30px;
+}
+
 /* Footer */
 
 footer {
