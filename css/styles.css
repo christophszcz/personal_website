@@ -545,11 +545,11 @@ a.button-link, a:visited {
 }
 
 .submission-field { 
-  width: 350px; 
-  height: 76px; 
+  width: 388px; 
+  height: 80px; 
   border: 1px solid #999999; 
   padding: 8px;
-  font-size: 30px
+  font-size: 25px
 }
 
 .message-field {
