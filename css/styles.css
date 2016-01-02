@@ -503,10 +503,6 @@ a.button-link, a:visited {
 
 /* Contact Form */
 
-.btn.btn-success.btn-lg{
-  margin-left: 220px;
-}
-
 .contact-form-title{
   text-align: center; 
   color: #778899;
@@ -521,17 +517,17 @@ a.button-link, a:visited {
   font-size: 24px;
 }
 
-
 .submission-field { 
   width: 350px; 
   height: 76px; 
   border: 1px solid #999999; 
-  padding: 5px; 
+  padding: 8px;
   font-size: 30px
 }
 
 .message-field {
   font-size: 30px;
+  padding: 8px;
 }
 
 /* Footer */
@@ -555,12 +551,33 @@ footer {
 
 /* Button and Icon Responsiveness Media Queries */
 
+ 
 @media (max-width: 1199px) {
   .container-fluid#download-button {
     padding-left: 375px;
   }
   .list-inline.social-buttons {
     margin-left: 70px;
+  }
+}
+
+@media (max-width: 1135px) {
+  .message-field {
+    font-size: 25px;
+  }
+  .submission-field {
+    height: 66px; 
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .message-field {
+    font-size: 20px;
+  }
+  .submission-field {
+    height: 52px; 
+    font-size: 20px;
   }
 }
 
@@ -606,6 +623,14 @@ footer {
   .list-inline.social-buttons {
     margin-left: 271px; 
   }
+  .message-field {
+    font-size: 15px;
+  }
+  .submission-field {
+    width: 275px;
+    height: 40px; 
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -650,9 +675,6 @@ footer {
 @media (max-width: 623px) {
   .container-fluid#download-button {
     padding-left: 175px;
-  }
-  input.btn.btn-success.btn-lg {
-    margin-left: 180px;
   }
   .col-md-8.footer-items{
     padding-left: 200px;
@@ -732,9 +754,6 @@ footer {
 }
 
 @media (max-width: 438px) {
-  input.btn.btn-success.btn-lg {
-    margin-left: 90px;
-  }
   .col-md-8.footer-items{
     padding-left: 100px;
   }
@@ -752,9 +771,6 @@ footer {
   }
   .list-inline.social-buttons {
     margin-left: 105px; 
-  }
-  input.btn.btn-success.btn-lg {
-    margin-left: 75px;
   }
   .navbar-brand {
   font-size: 22px;
