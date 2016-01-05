@@ -242,14 +242,14 @@ header .intro-text .intro-heading {
   }
 }
 
-/* About Section*/
+/* About Section */
 
 .about-section {
   min-height:800px;
   background:lightgrey;
 }
 
-.about-title{
+.about-channel-title{
   text-align: center; 
   color: #fff;
   font-size: 40px;
@@ -365,7 +365,7 @@ a.button-link, a:visited {
     padding-left: 480px;
 }
 
-/* Portfolio Section*/
+/* Portfolio Section */
 
 .portfolio-section {
   min-height:900px;
@@ -516,6 +516,13 @@ a.button-link, a:visited {
 
 .img-responsive#image {
   display: inline;
+}
+
+/* Channel Section */
+
+.channel-section {
+  min-height:550px;
+  background:lightgrey;
 }
 
 /*Contact Section */
