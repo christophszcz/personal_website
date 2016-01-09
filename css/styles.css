@@ -3,6 +3,7 @@
 .navbar-brand {
   font-family: 'Cinzel', serif;
   font-size: 28px;
+  text-shadow: 2px 2px #484848;
 }
 
 /* Main Section */
