@@ -1,27 +1,37 @@
-  var activeItemAbout = document.getElementById("identity0");
-  var activeItemPortfolio = document.getElementById("identity1");
-  var activeItemChannel = document.getElementById("identity2");
-  var activeItemContact = document.getElementById("identity3");
-  
-  function removeBlack(){
-    if (activeItemAbout.classList.contains("active")) {
-      activeItemAbout.classList.remove("active");
-    }
-    if (activeItemPortfolio.classList.contains("active")) {
-      activeItemPortfolio.classList.remove("active");
-    }
-    if (activeItemChannel.classList.contains("active")) {
-      activeItemChannel.classList.remove("active");
-    }
-    if (activeItemContact.classList.contains("active")) {
-      activeItemContact.classList.remove("active");
-    }
-  };
-
-  function addActive(num) {
-    removeBlack();  
-    var navbarItem = document.getElementsByTagName("li")[num];
-    navbarItem.className = navbarItem.className + " active";
-  };
+$(window).scroll(function() {
+  var aboutScroll = $('#about-scroll').offset().top,
+  aboutMargin = $('#about-scroll').outerHeight(),
+  portfolioScroll = $('#portfolio-scroll').offset().top,
+  portfolioMargin = $('#portfolio-scroll').outerHeight(),
+  channelScroll = $('#channel-scroll').offset().top,
+  channelMargin = $('#channel-scroll').outerHeight(),
+  contactScroll = $('#contact-scroll').offset().top,
+  contactMargin = $('#contact-scroll').outerHeight(),
+  windowHeight = $(window).height(),
+  windowScroll = $(this).scrollTop();
+  if (windowScroll < (aboutScroll + aboutMargin - windowHeight)){
+    $("li").removeClass('active');
+  }
+  if (windowScroll > (aboutScroll + aboutMargin - windowHeight)){
+    $("li:first").addClass('active');
+    $("li:nth-child(2)").removeClass('active');
+  }
+  if (windowScroll > (portfolioScroll + portfolioMargin - windowHeight)){
+    $("li:first").removeClass('active');
+    $("li:nth-child(2)").addClass('active');
+    $("li:nth-child(3)").removeClass('active');
+  }
+  if (windowScroll > (channelScroll + channelMargin - windowHeight)){
+    $("li:nth-child(2)").removeClass('active');
+    $("li:nth-child(3)").addClass('active');
+    $("li:nth-child(4)").removeClass('active');
+  }
+  if (windowScroll > (contactScroll + contactMargin - windowHeight)){
+    $("li:nth-child(3)").removeClass('active');
+    $("li:nth-child(4)").addClass('active');
+  }
+});
+ 
+   
 
    
