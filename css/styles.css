@@ -69,20 +69,21 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary .badge {
-    color: #fed136;
-    background-color: #fff;
+  color: #fed136;
+  background-color: #fff;
 }
 
 .btn-xl {
-    padding: 20px 40px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #00FF00;
-    box-shadow: 0 4px #006622;
+  padding: 20px 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #00FF00;
+  box-shadow: 0 4px #006622;
+  margin-top: 50px;
 }
 
 .btn-xl:hover,

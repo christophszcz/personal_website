@@ -1,12 +1,11 @@
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
-  margin = $('#about-scroll').outerHeight(),
-  portfolioScroll = $('#portfolio-scroll').offset().top,
-  channelScroll = $('#channel-scroll').offset().top,
-  contactScroll = $('#contact-scroll').offset().top,
-
-  windowHeight = $(window).height(),
-  windowScroll = $(this).scrollTop();
+    margin = $('#about-scroll').outerHeight(),
+    portfolioScroll = $('#portfolio-scroll').offset().top,
+    channelScroll = $('#channel-scroll').offset().top,
+    contactScroll = $('#contact-scroll').offset().top,
+    windowHeight = $(window).height(),
+    windowScroll = $(this).scrollTop();
   if (windowScroll < (aboutScroll + margin - windowHeight)){
     $("li").removeClass('active');
   }
