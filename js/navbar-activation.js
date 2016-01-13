@@ -1,32 +1,30 @@
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
-  aboutMargin = $('#about-scroll').outerHeight(),
+  margin = $('#about-scroll').outerHeight(),
   portfolioScroll = $('#portfolio-scroll').offset().top,
-  portfolioMargin = $('#portfolio-scroll').outerHeight(),
   channelScroll = $('#channel-scroll').offset().top,
-  channelMargin = $('#channel-scroll').outerHeight(),
   contactScroll = $('#contact-scroll').offset().top,
-  contactMargin = $('#contact-scroll').outerHeight(),
+
   windowHeight = $(window).height(),
   windowScroll = $(this).scrollTop();
-  if (windowScroll < (aboutScroll + aboutMargin - windowHeight)){
+  if (windowScroll < (aboutScroll + margin - windowHeight)){
     $("li").removeClass('active');
   }
-  if (windowScroll > (aboutScroll + aboutMargin - windowHeight)){
+  if (windowScroll > (aboutScroll + margin - windowHeight)){
     $("li:first").addClass('active');
     $("li:nth-child(2)").removeClass('active');
   }
-  if (windowScroll > (portfolioScroll + portfolioMargin - windowHeight)){
+  if (windowScroll > (portfolioScroll + margin - windowHeight)){
     $("li:first").removeClass('active');
     $("li:nth-child(2)").addClass('active');
     $("li:nth-child(3)").removeClass('active');
   }
-  if (windowScroll > (channelScroll + channelMargin - windowHeight)){
+  if (windowScroll > (channelScroll + margin - windowHeight)){
     $("li:nth-child(2)").removeClass('active');
     $("li:nth-child(3)").addClass('active');
     $("li:nth-child(4)").removeClass('active');
   }
-  if (windowScroll > (contactScroll + contactMargin - windowHeight)){
+  if (windowScroll > (contactScroll + margin - windowHeight)){
     $("li:nth-child(3)").removeClass('active');
     $("li:nth-child(4)").addClass('active');
   }
