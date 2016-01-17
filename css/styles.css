@@ -525,7 +525,7 @@ a.button-link, a:visited {
 /* Channel Section */
 
 .channel-section {
-  min-height:650px;
+  min-height:700px;
   background:lightgrey;
 }
 
@@ -812,6 +812,17 @@ footer {
   }
   .navbar-brand {
   font-size: 22px;
+  }
+  .page-scroll.btn.btn-xl{
+    position: relative;
+    bottom: 50px;
+  }
+  .main-text{
+    position: relative;
+    bottom: 50px;
+  }
+  .blinking-cursor {
+    bottom: 0px;
   }
 }
 
