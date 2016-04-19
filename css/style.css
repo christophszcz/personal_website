@@ -12,7 +12,7 @@
 /* Main Section */
 
 .main-section{
-  min-height:800px; 
+  min-height:900px; 
   background:black;
 }
 
@@ -249,7 +249,7 @@ header .intro-text .intro-heading {
 /* About Section */
 
 .about-section {
-  min-height:800px;
+  min-height:900px;
   background:lightgrey;
 }
 
@@ -525,7 +525,7 @@ a.button-link, a:visited {
 /* Channel Section */
 
 .channel-section {
-  min-height:700px;
+  min-height:900px;
   background:lightgrey;
 }
 
