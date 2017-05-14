@@ -11,7 +11,7 @@
   };
 })(jQuery);
 
-$("#typing-text-first").writeText("Hi there, my name is Chris... and I <3 programming.");
+$("#typing-text-first").writeText("Hi there, my name is Christopher... and I <3 programming.");
 
 
  

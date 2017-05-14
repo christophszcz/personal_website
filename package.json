@@ -1,0 +1,19 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "This is a personal website that contains an about me section, my resume, contact information, portfolio items, and a contact form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophszcz/personal_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophszcz/personal_website/issues"
+  },
+  "homepage": "https://github.com/christophszcz/personal_website#readme"
+}

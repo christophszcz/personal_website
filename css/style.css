@@ -6,7 +6,7 @@
 .navbar-brand {
   font-family: 'Cinzel', serif;
   font-size: 28px;
-  text-shadow: 2px 2px #484848;
+  text-shadow: 3px 1px 5px grey
 }
 
 /* Main Section */
@@ -128,7 +128,7 @@ fieldset[disabled] .btn-xl.active {
 .main-text{
   color:#00FF00;
   font-family: Monospace;
-  font-size: 34px
+  font-size: 30px
 }
 
 header {
