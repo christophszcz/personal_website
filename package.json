@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/christophszcz/personal_website/issues"
   },
-  "homepage": "https://github.com/christophszcz/personal_website#readme"
+  "homepage": "https://github.com/christophszcz/personal_website#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1"
+  }
 }
