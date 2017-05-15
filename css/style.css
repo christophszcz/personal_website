@@ -249,7 +249,7 @@ header .intro-text .intro-heading {
 
 .about-section {
   min-height:900px;
-  background:lightgrey;
+  background: #A0A0A0;
 }
 
 .about-channel-title{
@@ -267,7 +267,11 @@ body {
 }
 
 .description {
-  color: #777;
+  color: #000;
+}
+
+.text-muted{
+  color: #000;
 }
 
 h4{
@@ -532,7 +536,7 @@ a.source-code:visited{
 
 .channel-section {
   min-height:900px;
-  background:lightgrey;
+  background: #A0A0A0;
 }
 
 /*Contact Section */
