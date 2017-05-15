@@ -522,6 +522,10 @@ a.button-link, a:visited {
   display: inline;
 }
 
+a.source-code:visited{
+  color:#000;
+}
+
 /* Channel Section */
 
 .channel-section {
