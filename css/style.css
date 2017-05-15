@@ -532,6 +532,10 @@ a.source-code:visited{
   color:#000;
 }
 
+.close{
+  opacity: 0.6;
+}
+
 /* Channel Section */
 
 .channel-section {
