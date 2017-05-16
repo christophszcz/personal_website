@@ -512,6 +512,10 @@ a.button-link, a:visited {
   top: 80px;
 }
 
+.thumbnail{
+  width: initial;
+}
+
 /* Modals */
 
 .modal-footer {
@@ -618,6 +622,9 @@ footer {
   .container-fluid#download-button {
     padding-left: 375px;
   }
+  .glyphicon {
+    top: 65px;
+  }
 }
 
 @media (max-width: 1135px) {
@@ -652,7 +659,7 @@ footer {
     top: 0%;
   }
   .glyphicon {
-    top: 168px;
+    top: 130px;
   }
   .img-hover__body {
     font-size: 3em;
@@ -702,7 +709,7 @@ footer {
     padding-left: 230px;
   }
   .glyphicon {
-    top: 144px;
+    top: 125px;
   }
   .img-hover__body {
     font-size: 2em;
@@ -726,7 +733,7 @@ footer {
 
 @media (max-width: 580px) {
   .glyphicon {
-    top: 129px;
+    top: 100px;
   }
   .img-hover__body {
     font-size: 1em;
