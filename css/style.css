@@ -371,10 +371,20 @@ a.button-link, a:visited {
 }
 
 .container-fluid#download-button {
-    padding-top: 12px;
-    padding-left: 480px;
+  padding-top: 12px;
+  padding-left: 480px;
 }
 
+/* About Section Media Queries */
+
+@media (max-width: 767px){
+  .image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 255px;
+  }
+}
 /* Portfolio Section */
 
 .portfolio-section {
@@ -662,7 +672,6 @@ footer {
   header .intro-text {
   padding-top: 235px;
   }
-  
 }
 
 @media (max-width: 730px) {
