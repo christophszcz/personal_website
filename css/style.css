@@ -615,6 +615,11 @@ footer {
   padding-bottom: 50px;
 }
 
+span.link{
+  font-size: 35px;
+  color: #fff;
+}
+
 /* Button and Icon Responsiveness Media Queries */
 
  
