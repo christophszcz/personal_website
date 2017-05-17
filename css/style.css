@@ -2,7 +2,9 @@
 
 .navbar-inverse {
   box-shadow: 0 3px #A9A9A9;
+  background-color: #303030;
 }
+
 .navbar-brand {
   font-family: 'Cinzel', serif;
   font-size: 28px;
@@ -20,16 +22,16 @@
 }
 
 .bg-darkest-gray {
-    background-color: #222;
+  background-color: #222;
 }
 
 .btn-primary {
-    border-color: #fed136;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #fed136;
+  border-color: #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
 }
 
 .btn-primary:hover,
