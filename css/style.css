@@ -825,4 +825,7 @@ span.link{
   input.btn.btn-success.btn-lg {
     margin-left: 53px;
   }
+  .navbar-brand {
+    font-size: 18px;
+  }
 }
