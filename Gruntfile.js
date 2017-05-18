@@ -23,10 +23,23 @@ module.exports = function(grunt){
 					'js/scripts.min.js' : ['build/js/script.js']
 				}
 			}
+		},
+
+		cssmin: {
+		  options: {
+		    mergeIntoShorthands: false,
+		    roundingPrecision: -1
+		  },
+		  target: {
+		    files: {
+		      'css/style.min.css': ['css/style.css']
+		    }
+		  }
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 };
