@@ -608,7 +608,6 @@ footer {
 
 .footer-items {
   padding-left: 133px;
-  font-family: 'Lato', serif;
 }
 
 .copyright{
@@ -829,6 +828,14 @@ a.social-link{
   .blinking-cursor {
     bottom: 0px;
   }
+  .message-field {
+    font-size: 12px;
+  }
+  .submission-field {
+    width: 260px;
+    height: 35px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -839,7 +846,7 @@ a.social-link{
     margin-left: 53px;
   }
   .navbar-brand {
-    font-size: 17px;
+    font-size: 15px;
   }
   .btn-black.btn-primary.outline {
     font-size: 12px;
