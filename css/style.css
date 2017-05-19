@@ -624,6 +624,10 @@ span.link{
   color: #fff;
 }
 
+a.social-link{
+  text-decoration: none;
+}
+
 /* Button and Icon Responsiveness Media Queries */
 
  
