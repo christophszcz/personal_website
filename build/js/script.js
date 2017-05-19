@@ -10,6 +10,7 @@ $(function(){
     }, 'slow');
   });
 });
+
 $(window).scroll(function() {
   var aboutScroll = $('#about-scroll').offset().top,
     margin = $('#about-scroll').outerHeight(),

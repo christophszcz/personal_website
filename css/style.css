@@ -668,8 +668,9 @@ a.social-link{
   padding-left: 350px;
   }
   .modal{
-    left: 0%;
-    top: 0%;
+    left: 5%;
+    right: 5%;
+    top: 10%;
   }
   .glyphicon {
     top: 130px;
