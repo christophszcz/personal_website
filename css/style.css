@@ -391,7 +391,7 @@ a.button-link, a:visited {
 
 .portfolio-section {
   min-height:900px;
-  background:white;
+  background:#fff;
 } 
 
 .portfolio-caption {
@@ -421,7 +421,9 @@ a.button-link, a:visited {
   vertical-align: top;
 }
 
-.img-hover__image { display: block; }
+.img-hover__image { 
+  display: block; 
+}
 
 .img-hover__body {
   background: rgba(46, 255, 0, 0.75);
@@ -526,9 +528,9 @@ a.button-link, a:visited {
 
 .modal{
   text-align: center;
-     position: fixed;
-    left: 25%;
-    top: 10%;
+  position: fixed;
+  left: 25%;
+  top: 10%;
 }
 
 .modal-content {
@@ -562,11 +564,11 @@ a.source-code:visited{
 /*Contact Section */
  
 .contact-section {
-    min-height:400px;
-    background-image: url('../img/mountains.jpg');
-    background-size: 2560px 1100px;  
-    background-position: center;
-    background-repeat: no-repeat;
+  min-height:400px;
+  background-image: url('../img/mountains.jpg');
+  background-size: 2560px 1100px;  
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Contact Form */
@@ -798,6 +800,9 @@ span.link{
   }
   .navbar-brand {
     font-size: 21px;
+  }
+  .image-container {
+    height: 210px;
   }
 }
 
