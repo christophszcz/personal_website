@@ -826,6 +826,9 @@ span.link{
     margin-left: 53px;
   }
   .navbar-brand {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .btn-black.btn-primary.outline {
+    font-size: 12px;
   }
 }
