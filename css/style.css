@@ -775,6 +775,9 @@ span.link{
   .glyphicon {
     top: 100px;
   }
+  .main-text {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 445px) {
@@ -803,7 +806,7 @@ span.link{
     padding-left: 92px;
   }
   .navbar-brand {
-    font-size: 20px;
+    font-size: 19px;
   }
   .page-scroll.btn.btn-xl{
     position: relative;
@@ -830,5 +833,8 @@ span.link{
   }
   .btn-black.btn-primary.outline {
     font-size: 12px;
+  }
+  span.link {
+    font-size: 28px;
   }
 }
