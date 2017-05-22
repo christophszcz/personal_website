@@ -857,13 +857,17 @@ a.social-link{
 }
 
 @media (max-width: 350px){
-  .navbar-brand {
-    font-size: 15px;
+  .submission-field {
+    width: 245px;
   }
   .navbar-brand {
-    font-size: 15px;
+    font-size: 14px;
   }
   .glyphicon {
     top: 60px;
+  }
+  img#gif{
+    width: 250px;
+    height: 250px;
   }
 }
