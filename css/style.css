@@ -815,7 +815,7 @@ a.social-link{
     padding-left: 92px;
   }
   .navbar-brand {
-    font-size: 19px;
+    font-size: 17px;
   }
   .page-scroll.btn.btn-xl{
     position: relative;
@@ -853,5 +853,17 @@ a.social-link{
   }
   span.link {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 350px){
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .glyphicon {
+    top: 60px;
   }
 }
